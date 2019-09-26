@@ -1,0 +1,26 @@
+{
+  "name": "multi-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/core/index.js",
+  "scripts": {
+    "prebuild": "rimraf lib/ && mkdir lib/",
+    "build": "babel ./src -d lib/",
+    "pretest": "npm run build",
+    "test": "node ./scripts/test.script"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@types/react": "^16.9.2",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {}
+}
